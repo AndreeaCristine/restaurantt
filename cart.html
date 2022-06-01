@@ -1,0 +1,124 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeliDish</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link href="style3.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+	<header>
+
+		<a href="#" class="logo"><i class="fas fa-utensils"></i>DeliDish</a>
+	
+		<nav class="navbar">
+			<a  href="index.html">home</a>
+			<a href="#dishes">dishes</a>
+			<a href="#about">about</a>
+			
+			<a href="#book">book table</a>
+		   
+			<a href="#order">order</a>
+			<a  href="menu.html">menu</a>
+		  
+	
+			
+		</nav>
+	
+		<div class="icons">
+			<i class="fas fa-bars" id="menu-bars"></i>
+			<i class="fas fa-search" id="search-icon"></i>
+			<a href="#" class="fas fa-heart"></a>
+			<a  href="cart.html" class="fas fa-shopping-cart"></a>
+			
+		</div>
+	
+	
+	   
+	
+	
+	</header>
+	<section class="cart" id="cart">
+	<div class="container">
+		<!--  Shopping cart table wrapper  -->
+		<div id="shopping-cart">
+			<div class="txt-heading">
+				
+			</div>
+			<a onClick="emptyCart()" id="btnEmpty">Empty Cart</a>
+			<table class="tbl-cart" cellpadding="10" cellspacing="1">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th class='text-right' width="10%">Unit Price</th>
+						<th class='text-right' width="5%">Quantity</th>
+						<th class='text-right' width="10%">Sub Total</th>
+					</tr>
+				</thead>
+				<!--  Cart table to load data on "add to cart" action -->
+				<tbody id="cartTableBody">
+				</tbody>
+				<tfoot>
+					<tr>
+						<td class="text-right">Total:</td>
+						<td id="itemCount" class="text-right" colspan="2"></td>
+						<td id="totalAmount" class="text-right"></td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+	</div>
+</section>
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>locations</h3>
+            <a href="#">New York</a>
+            <a href="#">San Francisco</a>
+            <a href="#">Los Angeles</a>
+            <a href="#">Ohio</a>
+            <a href="#">Denver</a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#">home</a>
+            <a href="#">dishes</a>
+            <a href="#">about</a>
+            <a href="#">menu</a>
+            <a href="#">reivew</a>
+            <a href="#">order</a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#">+123-456-7890</a>
+            <a href="#">+111-222-3333</a>
+            <a href="#">Chicago, United States</a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#">facebook</a>
+            <a href="#">twitter</a>
+            <a href="#">instagram</a>
+            <a href="#">linkedin</a>
+        </div>
+
+    </div>
+
+    <div class="credit"> copyright @ 2022 by <span>AndreeaCristine</span> </div>
+
+</section>
+		
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="cart.js"></script>
+</body>
+</html>
